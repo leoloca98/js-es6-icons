@@ -29,8 +29,8 @@ const displayCards = (array, targetElement) => {
         <div class="col-2 ${offset}">
             <div class="card">
                 <div class="card-body">
-                    <i class="${icon.family} ${icon.prefix}${icon.name} fa-2x"></i>
-                    <p>${icon.name.toUpperCase()}</p>
+                    <i class="${icon.family} ${icon.prefix}${icon.name} fa-2x ${icon.type}"></i>
+                    <p class="fw-bolder">${icon.name.toUpperCase()}</p>
                 </div>
             </div>
         </div>
@@ -41,12 +41,30 @@ const displayCards = (array, targetElement) => {
     targetElement.innerHTML = iconsTemplate;
 }
 
+
+//# PRINT SECTION
+
 const displayIcons = document.querySelector("#main-section>.container>.row");
 displayCards(icons, displayIcons);
 
+//# FILTER
+
+const selectInput = document.getElementById("type-select");
+
+selectInput.addEventListener("change", () => {
+    const filterValue = selectInput.value;
+
+    if (filterValue === "all") {
+        displayCards(icons, displayIcons);
+        return;
+    }
+
+    const filteredIcons = icons.filter((icon) => filterValue === icon.type);
+    displayCards(filteredIcons, displayIcons);
+});
 
 
-//# CODE SECTION
+
 
 
 
