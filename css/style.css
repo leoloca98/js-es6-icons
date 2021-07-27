@@ -29,3 +29,15 @@
 select {
     cursor: pointer;
 }
+
+.animal {
+    color: dodgerblue;
+}
+
+.vegetable {
+    color: goldenrod;
+}
+
+.user {
+    color: purple;
+}
