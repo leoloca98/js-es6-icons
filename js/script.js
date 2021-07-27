@@ -1,7 +1,8 @@
 /*
 
 |Milestone 1
-Partendo dalla seguente struttura dati , mostriamo in pagina tutte le icone disponibili come da layout.
+Partendo dalla seguente struttura dati , mostriamo in pagina tutte le
+icone disponibili come da layout.
 
 |Milestone 2
 Coloriamo le icone per tipo

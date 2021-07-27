@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.he-70 {
+    height: 70px;
+}
+
+.select-btn {
+    width: 250px;
+}
+
+#main-section {
+    height: calc(100vh - 140px);
+    width: 100%;
+}
+
+.card {
+    min-width: 150px;
+    min-height: 100px;
+}
+
+select {
+    cursor: pointer;
+}
